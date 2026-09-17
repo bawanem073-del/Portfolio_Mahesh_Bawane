@@ -15,57 +15,90 @@
 
 <body>
 
-    <nav>
-        <h1>Mahesh.ai</h1>
-        <ul>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-text">Mahesh</span><span class="logo-accent">.ai</span>
+        </a>
+
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
-            <h2>
-                Hi, I am <br>
-                <span>Mahesh Bawane</span>
-            </h2>
-            <p>
-                Data Science & Machine Learning enthusiast skilled in Python,
-                SQL, Power BI, Flask API, and predictive modeling.
-                Passionate about building AI-powered solutions.
+            <span class="hero-greeting">Hi, I am</span>
+            <h2><span>Mahesh Bawane</span></h2>
+            <p class="hero-tagline">
+                Electronics & Communication Engineer specializing in <strong>Data Science & Machine Learning</strong>.
+                Experienced in predictive modeling, NLP, Flask APIs, SQL, and Power BI dashboarding to turn raw data
+                into end-to-end AI applications.
             </p>
 
             <div class="btns">
-                <a href="updated_resume_mahesh_bawane.pdf" class="btn" download>Download CV</a>
-                <a href="https://www.linkedin.com/in/maheshbawane" target="_blank" class="btn">LinkedIn</a>
+                <a href="updated_resume_mahesh_bawane.pdf" class="btn btn-primary" download>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg> Download CV
+                </a>
+                <a href="https://github.com/bawanem073-del" target="_blank" class="btn btn-secondary">
+                    <i class="devicon-github-original"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/maheshbawane" target="_blank" class="btn btn-secondary">
+                    <i class="devicon-linkedin-plain colored"></i> LinkedIn
+                </a>
             </div>
         </div>
 
-        <img src="mahesh_pic_1.jpg" alt="Profile Picture">
+        <div class="hero-img-container">
+            <img src="mahesh_pic_1.jpg" alt="Mahesh Bawane - Data Science & Machine Learning Engineer">
+        </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-box">
-            <p>I am an Electronics & Communication Engineering student passionate about Machine Learning and Data
-                Science.</p>
+            <p>
+                I am an Electronics & Communication Engineering student driven by building practical, end-to-end Machine
+                Learning models and Data Analytics solutions.
+            </p>
             <br>
-            <p>I have experience in:</p>
+            <p>What I bring to the table:</p>
             <ul>
-                <li>✔ Exploratory Data Analysis (EDA)</li>
-                <li>✔ Feature Engineering</li>
-                <li>✔ Machine Learning Models</li>
-                <li>✔ Flask API Deployment</li>
-                <li>✔ Power BI Dashboards</li>
-                <li>✔ SQL Database Integration</li>
+                <li>✔ <strong>Predictive Modeling & ML:</strong> Hands-on experience building classification and
+                    regression pipelines with Scikit-Learn, Random Forest, XGBoost, and CatBoost (e.g., Heart Disease &
+                    Mental Health prediction).</li>
+                <li>✔ <strong>Natural Language Processing (NLP):</strong> Crafting text processing systems using NLTK,
+                    TF-IDF vectorization, and sentiment classification algorithms.</li>
+                <li>✔ <strong>API Deployment & Cloud:</strong> Packaging models into lightweight REST APIs using Flask &
+                    FastAPI, containerized workflows, and hosting via AWS (EC2/S3) and Render.</li>
+                <li>✔ <strong>Data Analysis & Visualization:</strong> Performing thorough EDA using Pandas and NumPy,
+                    coupled with interactive Power BI dashboards for business insights.</li>
+                <li>✔ <strong>Database Systems:</strong> Designing clean SQL queries, joins, and database integrations
+                    for model data pipelines.</li>
             </ul>
             <br>
-            <p>Currently seeking opportunities in Data Science and AI domains.</p>
+            <p>Currently seeking entry-level opportunities and internships in Data Science, Machine Learning, and AI
+                Engineering.</p>
         </div>
     </section>
 
@@ -227,6 +260,16 @@
                 </div>
             </a>
 
+            <a href="https://project-predicting-student-mental-health.onrender.com" target="_blank"
+                class="project-card project-link">
+                <img src="images/mindtrack_ai.png" alt="MindTrack AI">
+                <div class="project-content">
+                    <h3>MindTrack AI</h3>
+                    <p>Student mental health score predictor trained on demographic, academic, digital-habit, and stress
+                        data.</p>
+                </div>
+            </a>
+
         </div>
     </section>
 
@@ -324,12 +367,30 @@
     <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2 class="section-title">Let's Work Together</h2>
-        <p>Email: <a href="mailto:bawanem073@gmail.com">bawanem073@gmail.com</a></p>
-        <p>Phone: <a href="tel:+919860853683">+91 9860853683</a></p>
+        <p class="contact-subtitle">I'm currently looking for Data Science and ML opportunities. Feel free to reach out!
+        </p>
+
+        <div class="contact-info">
+            <p>
+                <i class="devicon-google-plain colored"></i>
+                Email: <a href="mailto:bawanem073@gmail.com">bawanem073@gmail.com</a>
+            </p>
+            <p>
+                <i class="devicon-android-plain colored"></i>
+                Phone: <a href="tel:+919860853683">+91 9860853683</a>
+            </p>
+        </div>
 
         <div class="btns flex-center">
-            <a href="https://github.com/bawanem073-del" target="_blank" class="btn">GitHub</a>
-            <a href="https://www.linkedin.com/in/maheshbawane" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://github.com/bawanem073-del" target="_blank" class="btn">
+                <i class="devicon-github-original"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/maheshbawane" target="_blank" class="btn">
+                <i class="devicon-linkedin-plain"></i> LinkedIn
+            </a>
+            <a href="mailto:bawanem073@gmail.com" class="btn btn-primary">
+                Send Email directly
+            </a>
         </div>
     </section>
 
